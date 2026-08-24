@@ -5,6 +5,9 @@ FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
+# S'assurer que Python trouve le package kthshop
+ENV PYTHONPATH=/app
+
 # Répertoire de travail
 WORKDIR /app
 
