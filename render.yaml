@@ -5,7 +5,7 @@ services:
   - type: web
     name: kthshop-automation
     runtime: python
-    repo: https://github.com/sopbrice/kthshop-automation
+    repo: https://github.com/2pacbrice/kthshop-automation
     branch: main
     plan: free
     healthCheckPath: /dashboard/health
