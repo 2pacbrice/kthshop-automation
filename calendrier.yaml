@@ -1,0 +1,77 @@
+# Calendrier éditorial KTHSHOP — Format structuré pour l'automation
+# Généré à partir du calendrier éditorial existant
+# L'automation lit ce fichier pour planifier les publications
+
+meta:
+  shop: KTHSHOP
+  timezone: Africa/Douala
+  promo_8ans_active: true
+  promo_8ans_discount: 44
+  promo_8ans_until: "2026-08-15"
+
+content_pillars:
+  desir_produit:
+    label: "Désir produit"
+    weight: 0.40
+    description: "Contenu qui fait rêver sur le produit"
+  style_conseils:
+    label: "Style & conseils"
+    weight: 0.20
+    description: "Astuces mode, associations"
+  confiance_preuve:
+    label: "Confiance & preuve"
+    weight: 0.20
+    description: "Avis clients, étiquettes, colis"
+  communaute:
+    label: "Communauté & culture"
+    weight: 0.15
+    description: "Concours, sondages, interactions"
+  marque_histoire:
+    label: "Marque & histoire"
+    weight: 0.05
+    description: "Storytelling KTHSHOP"
+
+# Créneaux horaires recommandés (Africa/Douala)
+time_slots:
+  - "12:30"   # midi - pause déjeuner
+  - "14:00"   # début d'après-midi
+  - "18:30"   # soirée - MEILLEUR CRÉNEAU
+  - "21:00"   # nuit
+
+# Semaine type (gabarit récurrent)
+weekly_template:
+  monday:
+    time: "18:30"
+    content_type: reel
+    platform: facebook
+    pillar: desir_produit
+  tuesday:
+    time: "14:00"
+    content_type: photo
+    platform: facebook
+    pillar: confiance_preuve
+  wednesday:
+    time: "18:30"
+    content_type: reel
+    platform: facebook
+    pillar: desir_produit
+  thursday:
+    time: "14:00"
+    content_type: carrousel
+    platform: facebook
+    pillar: style_conseils
+  friday:
+    time: "18:30"
+    content_type: reel
+    platform: facebook
+    pillar: desir_produit
+  saturday:
+    time: "12:30"
+    content_type: photo
+    platform: facebook
+    pillar: communaute
+  sunday:
+    time: "18:00"
+    content_type: story
+    platform: facebook
+    pillar: marque_histoire

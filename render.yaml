@@ -1,0 +1,36 @@
+# KTHSHOP Automation — Déploiement Render.com
+# https://render.com/docs/infrastructure-as-code
+
+services:
+  - type: web
+    name: kthshop-automation
+    runtime: python
+    repo: https://github.com/sopbrice/kthshop-automation
+    branch: main
+    plan: free
+    healthCheckPath: /dashboard/health
+    envVars:
+      - key: DRY_RUN
+        value: "true"
+      - key: LOG_LEVEL
+        value: INFO
+      - key: PORT
+        value: "8080"
+      - key: SHOPIFY_ACCESS_TOKEN
+        sync: false  # À remplir dans le dashboard Render
+      - key: SHOPIFY_STORE_URL
+        value: royal-heel-boutique-754wk.myshopify.com
+      - key: FB_PAGE_ID
+        sync: false
+      - key: FB_PAGE_TOKEN
+        sync: false
+      - key: IG_USER_ID
+        sync: false
+      - key: HIGGSFIELD_API_KEY
+        sync: false
+      - key: WA_PHONE_NUMBER_ID
+        sync: false
+      - key: WA_TOKEN
+        sync: false
+      - key: WA_BUSINESS_ACCOUNT_ID
+        sync: false

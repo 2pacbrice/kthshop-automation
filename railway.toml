@@ -1,0 +1,11 @@
+[build]
+  builder = "nixpacks"
+
+[deploy]
+  healthcheckPath = "/dashboard/health"
+  healthcheckTimeout = 30
+  restartPolicyType = "on_failure"
+  restartPolicyMaxRetries = 3
+  
+[service]
+  port = 8080
